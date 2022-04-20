@@ -1,0 +1,203 @@
+
+/*----------------   Estilo de mapa   ------------------*/
+
+#map {
+height: 100%;
+width: 100%;
+}
+
+html,
+body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+
+
+
+.cuadrodefiltro {
+position: absolute;
+top: 20vh;
+bottom: 35vh;
+left: 3vw;
+z-index: 5;
+border-style:double;
+border-radius: 10px;
+width: 250px;
+background-image: radial-gradient(circle, #ffffff, #ecf1f7, #d2e6ec, #bbdad7, #b0cdba);
+padding: 10px;
+}
+
+#cabecerofiltro{
+  font-family:serif;
+  font-size: 20px;
+}
+
+
+
+#ntcasos{
+  text-align: center;
+  font-size: 27px;
+  color: #cb3705;
+  font-weight: 750;
+  font-family: sans-serif;
+}
+
+div.scroll_vertical ul{
+	height: 220px;
+	width: 200px;
+	border: 1px solid #ddd;
+	background: #f1f1f1;
+	overflow-y: scroll;
+}
+
+.ingreso {
+  float: left;
+  width: 370px;
+  margin-right: 70px;
+}
+
+#casos_confirmados{
+  text-align: center;
+  font-size: 25px;
+}
+
+.casos-texto{
+    float: left;
+    font-size: 13px;
+    color: black;
+    margin-top: 2px;
+    margin-left: 10px;
+    
+}
+
+.casos-valor{
+    letter-spacing: 1px;
+    float: left;
+}
+
+#filtrobuscador {
+  position: fixed;
+font-size: 12px;
+width: 225px;
+height: 25px;
+margin-left: 10px;
+z-index: 5;
+
+}
+
+#box-filtro{
+  position: fixed;
+  top: 331px;
+  z-index: 1;
+  background: white;
+  left: 51px;
+
+}
+
+#box-filtro li{
+  display: block;
+  font-size: 12px;
+  width: 225;
+  padding: 10px;
+  
+}
+
+#box-filtro li:hover{
+  background: #e8daef;
+}
+
+
+#botonfiltro{
+  font-size: 10px;
+}
+
+#tipo{
+  width: 55px;
+  border: 1px solid #e7e7e7;
+  height: 44px;
+  font-size: 13px;
+  color: inherit;
+  background-color: #fff;
+  margin-right: 10px;
+  font-weight: 300;
+  transition: border 0.3s;
+
+}
+
+.boton_filtro{
+  width: 200px;
+  padding: 4px;
+}
+ 
+::placeholder{
+  color: #6f7a70;
+}
+
+.agregar_btn {
+  position:absolute;
+  font-size: 18px;
+  background: none;
+  border: none;
+  color: #28B9B5;
+  cursor: pointer;
+  padding-top: 12px;
+  
+}
+
+
+#p1{color: #ce1717;}
+#p2{color: #0b7012;}
+#p3{color: #282524;}
+
+.limpiarEstilos::after {
+  content: "";
+  display: inline-table;
+  clear: both;
+}
+
+.derecha { float: right; }
+
+
+/*--------------------Autocompletado del filtro------------------*/
+
+#containerfiltro   {
+  display: flex;
+  justify-content: center;
+  
+}
+
+#filtroporubicaciones {
+  display: flex;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: relative;
+}
+#btnfiltro {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  border: none;
+  background: none;
+  margin: 0;
+}
+#intfiltro {
+  font-size: 16px;
+  padding: 8px 12px;
+  z-index: 5;
+  border: none;
+  background: none;
+  margin: 0;
+}
+
+#icnfiltro {
+  width: 18px;
+  height: 18;
+  fill: black;
+}
+
+#ulfiltro {
+  display: none;
+}
